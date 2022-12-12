@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*过去使用变量的大部分内容都可以被 Tailwind的 theme()函数替换，这个函数可以让你直接在 CSS 中访问 Tailwind.config.js 文件中的所有设计标记*/
+.btn {
+    padding: theme('spacing.2');
+    background-color: theme('colors.blue.500');
+}
